@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mediaquery.css">
 </head>
@@ -12,7 +14,7 @@
     <main>
         <section id="login">
             <div id="imagem">
-                
+
             </div>
 
             <div id="formulario">
@@ -20,6 +22,23 @@
             <h1>Login</h1>
             <p>Seja bem vindo(a), faça login para acessar sua conta</p>
             <form action="login.php" method="post">
+                
+                <div class="campo">
+
+                    <i class="material-icons">person</i>
+                    <input type="email" name="login" id="ilogin" placeholder="seu email" autocomplete="email" maxlength="30">
+                    <label for="ilogin">login</label>
+                </div>
+
+                <div class="campo">
+                    
+                    <i class="material-icons">vpn_key</i>
+                    <input type="password" name="senha" id="isenha" placeholder="digite seu senha" autocomplete="current-password " minlength="8" maxlength="">
+                    <label for="isenha">senha</label>
+                </div>
+                <button>entrar</button>
+                <a href="esqueci.html" > esqueci a senha  <i class="material-icons">mail</i></a>
+                
 
             </form>
             </div>
